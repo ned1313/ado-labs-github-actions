@@ -12,7 +12,7 @@ If you'd like to follow along you'll need the following:
   * Instructions included below to create the service principal
 * An Azure storage account, container, and SAS token for state data
   * Instructions included below to create the storage account
-* A GitHub account
+* A GitHub account and a forked instance of this repository
 * The drive to be awesome!
   * Oh wait, you already ARE **awesome**! Well done.
 
@@ -50,9 +50,27 @@ terraform init
 terraform apply -auto-approve # Because we live on the edge!
 ```
 
+At this point your GitHub repository is all set for you to kick off a GitHub Action. Actions are triggered by any `push` or `pull_request` event that happens in the repo. Pushing an updated version from your local desktop should trigger it. The Action will do the following:
+
+* All events
+  * Pull the repo to the runner
+  * Install Terraform
+  * Initialize Terraform with remote state
+
+* Pull Requests
+  * Generate a plan of the changes
+  * Add the results of the plan to the pull request as a comment
+
+* Push on main branch (AKA a merge)
+  * Run a Terraform apply with `-auto-approve` to update the target environment
+
+Feel free to mess around with the different events to manipulate the environment.
+
 ## Cleanup
 
-### App Service
+When you're done with this experiment, you've got two things to cleanup. The environment deployed by GitHub Actions and the supporting environment deployed from `remote_setup`. Start by either removing the GitHubs actions `terraform.yml` file or deleting the repository. Then delete the resource group  for the Web App using the Azure CLI or Portal.
 
-### Remote Setup
+From the `remote_setup` directory run `terraform destroy` to delete all supporting resources.
+
+And that's it! You've cleaned up.
 
