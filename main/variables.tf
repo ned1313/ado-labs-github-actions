@@ -27,5 +27,5 @@ variable "asp_size" {
 variable "capacity" {
   type = string
   description = "Number of instances for App Service Plan"
-  default = "1"
+  default = "2"
 }

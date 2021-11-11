@@ -10,7 +10,7 @@ If you'd like to follow along you'll need the following:
 * An Azure subscription
 * An Azure AD service principal with Contributor permissions
   * Instructions included below to create the service principal
-* An Azure storage account, container, and SAS token for state data
+* An Azure storage account and container
   * Instructions included below to create the storage account
 * A GitHub account and a forked instance of this repository
 * The drive to be awesome!
