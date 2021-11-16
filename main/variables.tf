@@ -21,7 +21,7 @@ variable "asp_tier" {
 variable "asp_size" {
     type = string
     description = "Size for App Service Plan (S2, P1v2)"
-    default = "F1"
+    default = "S1"
 }
 
 variable "capacity" {
