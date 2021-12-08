@@ -1,6 +1,6 @@
 # Azure DevOps Labs - GitHub Actions with Terraform
 
-Howdy there! These are the demo files to accompany the Azure DevOps Lab video GitHub Actions with Terraform (*Note: I'll add a link once the video is live AND I remember*). This demo includes the following:
+Howdy there! These are the demo files to accompany the [Azure DevOps Lab video GitHub Actions with Terraform.](https://youtu.be/QcBtWX72dRw) This demo includes the following:
 
 * Terraform code to deploy an instance of App Services on Microsoft Azure
 * GitHub Actions to manage the deployment of Terraform code
