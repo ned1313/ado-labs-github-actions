@@ -42,7 +42,7 @@ resource "azurerm_app_service" "app_service" {
   app_service_plan_id = azurerm_app_service_plan.app_service.id
   
   source_control {
-    repo_url = "https://github.com/sk4red/DevOpsDemo"
+    repo_url = "https://github.com/sk4red/azure-node-express"
     branch = "main"
     manual_integration = true
     use_mercurial = false
