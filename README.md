@@ -1,4 +1,4 @@
-# Azure DevOps Labs - GitHub Actions with Terraform - Location WestUS
+# Azure DevOps Labs - GitHub Actions with Terraform - Location WestUS 1
 
 Howdy there! These are the demo files to accompany the [Azure DevOps Lab video GitHub Actions with Terraform.](https://youtu.be/QcBtWX72dRw) This demo includes the following:
 
