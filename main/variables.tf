@@ -9,7 +9,7 @@ variable "location" {
 
 variable "naming_prefix" {
   type    = string
-  default = "ihub1adolabs"
+  default = "adolabs"
 }
 
 variable "asp_tier" {
