@@ -9,7 +9,7 @@ variable "location" {
 
 variable "naming_prefix" {
   type    = string
-  default = "adolabs"
+  default = "adolabs-test"
 }
 
 variable "github_repository" {
