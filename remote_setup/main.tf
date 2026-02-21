@@ -24,6 +24,7 @@ resource "azuread_application" "gh_actions" {
 }
 
 resource "azuread_service_principal" "gh_actions" {
+  //client_id = azuread_application.gh_actions.application_id
   application_id = azuread_application.gh_actions.application_id
   owners = [ data.azuread_client_config.current.object_id ]
 }
