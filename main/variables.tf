@@ -4,7 +4,7 @@
 
 variable "location" {
   type    = string
-  default = "eastus"
+  default = "australiaeast"
 }
 
 variable "naming_prefix" {
